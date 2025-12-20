@@ -107,6 +107,8 @@ main > .tagline {
 	text-align: left;
 	box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(2px);
+	display: flex;
+	flex-direction: column;
 }
 
 .project-media {
@@ -168,6 +170,7 @@ main > .tagline {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+	flex: 1;
 }
 
 .project-title {
@@ -183,8 +186,9 @@ main > .tagline {
 
 .project-links {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem 0.75rem;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: auto;
 }
 
 .project-link {
@@ -194,6 +198,7 @@ main > .tagline {
 	display: inline-flex;
 	align-items: center;
 	gap: 0.35rem;
+	width: 100%;
 }
 
 .project-link:hover,
