@@ -1,31 +1,240 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Humberto Lopez | Awesome Dev</title>
+    <title>Humberto Lopez | Software Engineer</title>
 
     <link rel="icon" href="favicon.ico" type="image/png" />
 
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/indigo-white.css">
-</head>
-<body>
-<main>
-    <div class="intro">Hello, I'm Humberto!</div>
-    <div class="tagline">Full Stack Developer | Gamer | Linux Enthusiast | Maker</div>
-    <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-    <div class="icons-social">
-        <a target="_blank" href="https://www.linkedin.com/in/humbertoalopez/"><i class="fab fa-linkedin"></i></a>
-        <a target="_blank" href="https://github.com/HumbertoL"><i class="fab fa-github"></i></a>
-        <a target="_blank" href="https://steamcommunity.com/id/HumbertoL/"><i class="fab fa-steam"></i></a>
-        <a target="_blank" href="https://boop-snoot.web.app/"><i class="fas fa-paw"></i></a>
-    </div>
-</main>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/indigo-white.css" />
+  </head>
+  <body>
+    <main>
+      <div class="intro">Hello, I'm Humberto!</div>
+      <div class="tagline">
+        Full Stack Developer | Gamer | Linux Enthusiast | Maker | Engineer
+      </div>
+      <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+      <div class="icons-social">
+        <a target="_blank" href="https://www.linkedin.com/in/humbertoalopez/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://github.com/HumbertoL"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a target="_blank" href="https://steamcommunity.com/id/HumbertoL/"
+          ><i class="fab fa-steam"></i
+        ></a>
+      </div>
+
+      <section class="projects" aria-labelledby="featured-projects">
+        <h2 id="featured-projects">Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                src="assets/boopsnoot.gif"
+                alt="Boop Snoot pet photo generator preview"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Boop Snoot</h3>
+              <p>
+                A delightful app that places a "snoot" on any part of the page that you "boop"
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://boop-snoot.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-paw" aria-hidden="true"></i>
+                  <span>Launch Boop Snoot</span></a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/HumbertoL/boop-snoot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source on GitHub</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media project-media--video">
+              <iframe
+                src="https://www.youtube.com/embed/xJZB41Rl86o"
+                title="brew-em-all demo"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Coffee Pot Freshness Sensor</h3>
+              <p>
+                Arduino Nano gadget that tracks three coffee pots and updates a
+                colorful LCD every few seconds.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://www.youtube.com/watch?v=xJZB41Rl86o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-youtube" aria-hidden="true"></i>
+                  <span>Watch on YouTube</span></a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/HumbertoL/CoffeePotSensor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source on GitHub</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                src="https://user-images.githubusercontent.com/8048702/188496431-c3b7a76b-693d-4b8e-82f1-f239187953fb.gif"
+                alt="NeoPixel ring clock animation demo"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Arduino Animated Ring Clock</h3>
+              <p>
+                Turns a NeoPixel ring into a clock with playful animations
+                driven by an Arduino.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://www.tinkercad.com/things/a9E6ygQavKf-frantic-hillar-jaiks/editel?sharecode=qLQe7QWWapr5ZbWMG3YvCU3VH7WgVoDU2_r5Z7OdeAg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-cube" aria-hidden="true"></i>
+                  <span>Preview in Tinkercad</span></a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/HumbertoL/arduino-animated-ring-clock"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source on GitHub</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media project-media--coolled">
+              <img
+                src="data:image/gif;base64,R0lGODlhAQABAIABAP8AAP///yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Placeholder LED animation for CoolLED"
+              />
+              <span class="media-note">LED layout preview</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">CoolLED Editor</h3>
+              <p>
+                Previewer and editor for 16x96 LED panel animations using a
+                reverse engineered vendor format.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://coolled-editor.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-rocket" aria-hidden="true"></i>
+                  <span>Try it</span></a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/HumbertoL/coolled-editor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source on GitHub</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media project-media--video">
+              <iframe
+                src="https://www.youtube.com/embed/zzCy-9AG1cU"
+                title="Smart Dog Treat Dispenser demo"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Dog Treat Dispenser</h3>
+              <p>
+                Internet-controlled treat dispenser built with Blynk and a servo so you can reward pups from your phone.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://www.youtube.com/watch?v=zzCy-9AG1cU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-youtube" aria-hidden="true"></i>
+                  <span>Watch on YouTube</span></a
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/HumbertoL/treat.dispenser"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source on GitHub</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img
+                src="https://user-images.githubusercontent.com/8048702/190041020-3f523a0b-dd62-477c-895a-ea116d76ab17.png"
+                alt="Wiring diagram for IR to Keyboard Bridge"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">IR to Keyboard Bridge</h3>
+              <p>
+                Convert IR remote signals into keyboard events with a Pro Micro or Leonardo so TV remotes can steer USB devices.
+              </p>
+              <div class="project-links">
+                <a
+                  class="project-link"
+                  href="https://github.com/HumbertoL/ir-bridge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Source on GitHub</span></a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

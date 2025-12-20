@@ -39,6 +39,7 @@ main {
 	flex-direction: column;
 	min-height: 100vh;
 	justify-content: center;
+	gap: 1.5rem;
 	padding: 0 30px;
 	text-align: center;
 }
@@ -47,6 +48,7 @@ main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
+	margin-top: 2rem;
 }
 
 main > .tagline {
@@ -68,4 +70,137 @@ main > .tagline {
 	margin-left: 0.675rem;;
 	width: 2.65rem;
 	height: 2.65rem;
+}
+
+.projects {
+	width: min(1100px, 100%);
+	margin: 1rem auto 2rem;
+	text-align: left;
+}
+
+.projects h2 {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 2rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.project-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+	.project-grid {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+}
+
+.project-card {
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 14px;
+	overflow: hidden;
+	text-align: left;
+	box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(2px);
+}
+
+.project-media {
+	position: relative;
+	background: #1f2765;
+}
+
+.project-media img,
+.project-media iframe {
+	display: block;
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border: 0;
+}
+
+.project-media--video iframe {
+	height: 240px;
+}
+
+.project-media--coolled {
+	background:
+		radial-gradient(circle at 20% 25%, #7c4dff 0 10px, transparent 12px),
+		radial-gradient(circle at 40% 70%, #26c6da 0 10px, transparent 12px),
+		radial-gradient(circle at 70% 35%, #ef5350 0 10px, transparent 12px),
+		radial-gradient(circle at 85% 75%, #ffc107 0 10px, transparent 12px),
+		#151b4b;
+}
+
+.project-media--coolled::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background:
+		repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 14px),
+		repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 14px);
+	mix-blend-mode: screen;
+	opacity: 0.45;
+}
+
+.project-media--coolled img {
+	opacity: 0.05;
+}
+
+.media-note {
+	position: absolute;
+	bottom: 0.75rem;
+	right: 0.75rem;
+	background: rgba(0, 0, 0, 0.55);
+	padding: 0.4rem 0.7rem;
+	border-radius: 999px;
+	font-size: 0.75rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.project-body {
+	padding: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.project-title {
+	margin: 0;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.project-body p {
+	margin: 0;
+	line-height: 1.45;
+}
+
+.project-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 0.75rem;
+}
+
+.project-link {
+	color: #ffc107;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.project-link:hover,
+.project-link:focus {
+	text-decoration: underline;
+}
+
+#featured-projects {
+	margin-bottom: 3rem;
 }
