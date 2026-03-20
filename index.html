@@ -36,15 +36,10 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-
     <!-- ===== Navigation ===== -->
     <nav class="nav" aria-label="Site navigation">
       <span class="nav-logo"></span>
-      <button
-        class="nav-toggle"
-        aria-label="Toggle menu"
-        aria-expanded="false"
-      >
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
@@ -124,21 +119,6 @@
       <div class="section-container">
         <h2 class="section-heading" id="about-heading" data-reveal>About Me</h2>
 
-        <div class="stats" data-reveal>
-          <div class="stat">
-            <span class="stat-number">12+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">7+</span>
-            <span class="stat-label">Personal Projects</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Open Source Projects</span>
-          </div>
-        </div>
-
         <div class="about-grid" data-reveal>
           <div class="about-text">
             <p>
@@ -179,7 +159,6 @@
           Featured Projects
         </h2>
         <div class="project-grid">
-
           <article class="project-card" data-reveal>
             <div class="project-media">
               <img
@@ -436,7 +415,6 @@
               </div>
             </div>
           </article>
-
         </div>
       </div>
     </section>
@@ -471,14 +449,17 @@
 
     <script>
       // Scroll-reveal animation
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' },
+      );
 
       document.querySelectorAll('[data-reveal]').forEach(function (el) {
         observer.observe(el);

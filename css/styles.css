@@ -450,20 +450,21 @@ body::before {
 /* ===== Stats ===== */
 
 .stats {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
   margin-bottom: 3.5rem;
-  flex-wrap: wrap;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stat {
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  min-width: 160px;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 
@@ -719,7 +720,7 @@ body::before {
 }
 
 .project-link {
-  color: var(--amber);
+  color: var(--primary-light);
   font-weight: 500;
   font-size: 0.85rem;
   text-decoration: none;
@@ -731,7 +732,7 @@ body::before {
 
 .project-link:hover,
 .project-link:focus {
-  color: #fff;
+  color: var(--accent);
   gap: 0.6rem;
 }
 
