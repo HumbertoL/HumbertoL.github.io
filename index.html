@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Humberto Lopez | Software Engineer</title>
+    <meta
+      name="description"
+      content="Humberto Lopez — Full Stack Software Engineer with 12+ years of experience building web apps, IoT devices, and open-source tools."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Humberto Lopez | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full Stack Software Engineer with 12+ years of experience crafting high-quality software."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
 
     <link rel="icon" href="favicon.ico" type="image/png" />
 
@@ -23,9 +36,17 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+
     <!-- ===== Navigation ===== -->
     <nav class="nav" aria-label="Site navigation">
       <span class="nav-logo"></span>
+      <button
+        class="nav-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -50,15 +71,15 @@
       </div>
 
       <div class="hero-content">
-        <p class="hero-eyebrow">Hello, I'm</p>
-        <h1 class="hero-name">Humberto Lopez</h1>
-        <p class="hero-role">Full Stack Software Engineer</p>
-        <p class="hero-bio">
-          12+ years of crafting high-quality software - from pixel-perfect UIs
+        <p class="hero-eyebrow stagger">Hello, I'm</p>
+        <h1 class="hero-name stagger">Humberto Lopez</h1>
+        <p class="hero-role stagger">Full Stack Software Engineer</p>
+        <p class="hero-bio stagger">
+          12+ years of crafting high-quality software — from pixel-perfect UIs
           to resilient back-end systems. I love turning ideas into products that
           people actually enjoy using.
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions stagger">
           <a href="#projects" class="btn btn--primary">View My Work</a>
           <a
             href="https://github.com/HumbertoL"
@@ -68,7 +89,7 @@
             ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
           >
         </div>
-        <div class="hero-social">
+        <div class="hero-social stagger">
           <a
             href="https://www.linkedin.com/in/humbertoalopez/"
             target="_blank"
@@ -101,8 +122,24 @@
     <!-- ===== About ===== -->
     <section class="about" id="about" aria-labelledby="about-heading">
       <div class="section-container">
-        <h2 class="section-heading" id="about-heading">About Me</h2>
-        <div class="about-grid">
+        <h2 class="section-heading" id="about-heading" data-reveal>About Me</h2>
+
+        <div class="stats" data-reveal>
+          <div class="stat">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Personal Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Open Source Projects</span>
+          </div>
+        </div>
+
+        <div class="about-grid" data-reveal>
           <div class="about-text">
             <p>
               I'm a full-stack software engineer with over 12 years of
@@ -138,11 +175,12 @@
     <!-- ===== Projects ===== -->
     <section class="projects" id="projects" aria-labelledby="featured-projects">
       <div class="section-container">
-        <h2 class="section-heading" id="featured-projects">
+        <h2 class="section-heading" id="featured-projects" data-reveal>
           Featured Projects
         </h2>
         <div class="project-grid">
-          <article class="project-card">
+
+          <article class="project-card" data-reveal>
             <div class="project-media">
               <img
                 src="assets/boopsnoot.gif"
@@ -151,6 +189,10 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">Boop Snoot</h3>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Firebase</span>
+              </div>
               <p>
                 A delightful app that places a "snoot" on any part of the page
                 that you "boop".
@@ -176,7 +218,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-reveal>
             <div class="project-media project-media--video">
               <iframe
                 src="https://www.youtube.com/embed/xJZB41Rl86o"
@@ -186,6 +228,11 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">Coffee Pot Freshness Sensor</h3>
+              <div class="project-tech">
+                <span>Arduino</span>
+                <span>C++</span>
+                <span>IoT</span>
+              </div>
               <p>
                 Arduino gadget that tracks coffee freshness and updates an LCD.
               </p>
@@ -210,7 +257,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-reveal>
             <div class="project-media">
               <img
                 src="assets/prs.png"
@@ -219,6 +266,11 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">Open Source Contributions</h3>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Material-UI</span>
+                <span>Expo</span>
+              </div>
               <p>
                 Contributed to React JS, Material-UI, Expo, MDN Web Docs, and
                 more.
@@ -236,7 +288,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-reveal>
             <div class="project-media">
               <img
                 src="https://user-images.githubusercontent.com/8048702/188496431-c3b7a76b-693d-4b8e-82f1-f239187953fb.gif"
@@ -245,6 +297,11 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">Arduino Animated Ring Clock</h3>
+              <div class="project-tech">
+                <span>Arduino</span>
+                <span>NeoPixel</span>
+                <span>C++</span>
+              </div>
               <p>
                 Turns a NeoPixel ring into a clock with playful animations
                 driven by an Arduino.
@@ -270,7 +327,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-reveal>
             <div class="project-media project-media--coolled">
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAIABAP8AAP///yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -280,6 +337,10 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">CoolLED Editor</h3>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Reverse Engineering</span>
+              </div>
               <p>
                 Editor for 16x96 LED panel animations using a reverse-engineered
                 vendor format.
@@ -305,7 +366,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-reveal>
             <div class="project-media project-media--video">
               <iframe
                 src="https://www.youtube.com/embed/zzCy-9AG1cU"
@@ -315,6 +376,11 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">Smart Dog Treat Dispenser</h3>
+              <div class="project-tech">
+                <span>Arduino</span>
+                <span>Blynk</span>
+                <span>IoT</span>
+              </div>
               <p>
                 Internet-controlled treat dispenser built with Blynk so you can
                 reward pups from your phone.
@@ -340,7 +406,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-reveal>
             <div class="project-media">
               <img
                 src="https://user-images.githubusercontent.com/8048702/190041020-3f523a0b-dd62-477c-895a-ea116d76ab17.png"
@@ -349,6 +415,11 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">IR to Keyboard Bridge</h3>
+              <div class="project-tech">
+                <span>Arduino</span>
+                <span>C++</span>
+                <span>USB HID</span>
+              </div>
               <p>
                 Convert IR remote signals into keyboard events with a Pro Micro
                 or Leonardo so TV remotes can control USB devices.
@@ -365,6 +436,7 @@
               </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -396,5 +468,39 @@
         ></a>
       </div>
     </footer>
+
+    <script>
+      // Scroll-reveal animation
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('[data-reveal]').forEach(function (el) {
+        observer.observe(el);
+      });
+
+      // Mobile menu toggle
+      var toggle = document.querySelector('.nav-toggle');
+      var links = document.querySelector('.nav-links');
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+
+      // Close mobile menu when a nav link is clicked
+      links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          links.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    </script>
   </body>
 </html>
