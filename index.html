@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,8 +9,10 @@
 
     <link rel="icon" href="favicon.ico" type="image/png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,29 +21,126 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/indigo-white.css" />
   </head>
   <body>
-    <main>
-      <div class="intro">Hello, I'm Humberto!</div>
-      <div class="tagline">
-        Full Stack Developer | Gamer | Linux Enthusiast | Maker | Engineer
-      </div>
-      <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-      <div class="icons-social">
-        <a target="_blank" href="https://www.linkedin.com/in/humbertoalopez/"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a target="_blank" href="https://github.com/HumbertoL"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a target="_blank" href="https://steamcommunity.com/id/HumbertoL/"
-          ><i class="fab fa-steam"></i
-        ></a>
+    <!-- ===== Navigation ===== -->
+    <nav class="nav" aria-label="Site navigation">
+      <span class="nav-logo"></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/humbertoalopez/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-orb hero-orb--3"></div>
+        <div class="hero-grid"></div>
       </div>
 
-      <section class="projects" aria-labelledby="featured-projects">
-        <h2 id="featured-projects">Featured Projects</h2>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Humberto Lopez</h1>
+        <p class="hero-role">Full Stack Software Engineer</p>
+        <p class="hero-bio">
+          12+ years of crafting high-quality software - from pixel-perfect UIs
+          to resilient back-end systems. I love turning ideas into products that
+          people actually enjoy using.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a
+            href="https://github.com/HumbertoL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--outline"
+            ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
+          >
+        </div>
+        <div class="hero-social">
+          <a
+            href="https://www.linkedin.com/in/humbertoalopez/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            ><i class="fab fa-linkedin" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://github.com/HumbertoL"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            ><i class="fab fa-github" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://steamcommunity.com/id/HumbertoL/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Steam profile"
+            ><i class="fab fa-steam" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="section-container">
+        <h2 class="section-heading" id="about-heading">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a full-stack software engineer with over 12 years of
+              professional experience building everything from interactive web
+              apps to hardware-driven IoT projects. I'm equally comfortable
+              diving into a React component tree, designing a REST API, or
+              soldering an Arduino circuit.
+            </p>
+            <p>
+              When I'm not shipping code, you'll find me tinkering in my
+              workshop, gaming on Linux, or contributing to open source.
+            </p>
+          </div>
+          <div class="skills">
+            <h3 class="skills-heading">Technologies I work with</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">HTML &amp; CSS</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Arduino / C++</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="projects" id="projects" aria-labelledby="featured-projects">
+      <div class="section-container">
+        <h2 class="section-heading" id="featured-projects">
+          Featured Projects
+        </h2>
         <div class="project-grid">
           <article class="project-card">
             <div class="project-media">
@@ -54,7 +153,7 @@
               <h3 class="project-title">Boop Snoot</h3>
               <p>
                 A delightful app that places a "snoot" on any part of the page
-                that you "boop"
+                that you "boop".
               </p>
               <div class="project-links">
                 <a
@@ -76,6 +175,7 @@
               </div>
             </div>
           </article>
+
           <article class="project-card">
             <div class="project-media project-media--video">
               <iframe
@@ -86,7 +186,9 @@
             </div>
             <div class="project-body">
               <h3 class="project-title">Coffee Pot Freshness Sensor</h3>
-              <p>Arduino gadget that tracks coffee pots and updates an LCD.</p>
+              <p>
+                Arduino gadget that tracks coffee freshness and updates an LCD.
+              </p>
               <div class="project-links">
                 <a
                   class="project-link"
@@ -107,7 +209,8 @@
               </div>
             </div>
           </article>
-                <article class="project-card">
+
+          <article class="project-card">
             <div class="project-media">
               <img
                 src="assets/prs.png"
@@ -117,8 +220,8 @@
             <div class="project-body">
               <h3 class="project-title">Open Source Contributions</h3>
               <p>
-                Contributed to various open source projects including React JS,
-                Material-UI, Expo and MDN Web Docs.
+                Contributed to React JS, Material-UI, Expo, MDN Web Docs, and
+                more.
               </p>
               <div class="project-links">
                 <a
@@ -132,6 +235,7 @@
               </div>
             </div>
           </article>
+
           <article class="project-card">
             <div class="project-media">
               <img
@@ -165,6 +269,7 @@
               </div>
             </div>
           </article>
+
           <article class="project-card">
             <div class="project-media project-media--coolled">
               <img
@@ -176,7 +281,7 @@
             <div class="project-body">
               <h3 class="project-title">CoolLED Editor</h3>
               <p>
-                Editor for 16x96 LED panel animations using a reverse engineered
+                Editor for 16x96 LED panel animations using a reverse-engineered
                 vendor format.
               </p>
               <div class="project-links">
@@ -186,7 +291,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   ><i class="fas fa-rocket" aria-hidden="true"></i>
-                  <span>Try it</span></a
+                  <span>Try it live</span></a
                 >
                 <a
                   class="project-link"
@@ -199,6 +304,7 @@
               </div>
             </div>
           </article>
+
           <article class="project-card">
             <div class="project-media project-media--video">
               <iframe
@@ -233,6 +339,7 @@
               </div>
             </div>
           </article>
+
           <article class="project-card">
             <div class="project-media">
               <img
@@ -258,9 +365,36 @@
               </div>
             </div>
           </article>
-    
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <p>Designed &amp; built by <strong>Humberto Lopez</strong></p>
+      <div class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/humbertoalopez/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://github.com/HumbertoL"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          ><i class="fab fa-github" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://steamcommunity.com/id/HumbertoL/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Steam"
+          ><i class="fab fa-steam" aria-hidden="true"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
