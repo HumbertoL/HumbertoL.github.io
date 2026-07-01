@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Humberto Lopez | Software Engineer</title>
+    <title>Humberto Lopez | Principal Engineer</title>
     <meta
       name="description"
-      content="Humberto Lopez — Full Stack Software Engineer with 12+ years of experience building web apps, IoT devices, and open-source tools."
+      content="Humberto Lopez — Principal Engineer with 12+ years of experience building web apps, IoT devices, and open-source tools."
     />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Humberto Lopez | Software Engineer" />
+    <meta property="og:title" content="Humberto Lopez | Principal Engineer" />
     <meta
       property="og:description"
-      content="Full Stack Software Engineer with 12+ years of experience crafting high-quality software."
+      content="Principal Engineer with 12+ years of experience crafting high-quality software."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
@@ -25,430 +25,377 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- ===== Navigation ===== -->
-    <nav class="nav" aria-label="Site navigation">
-      <span class="nav-logo"></span>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li>
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="#home" class="wordmark">Humberto Lopez</a>
+        <nav class="nav" aria-label="Site navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
           <a
             href="https://www.linkedin.com/in/humbertoalopez/"
             target="_blank"
             rel="noopener noreferrer"
             >Contact</a
           >
-        </li>
-      </ul>
-    </nav>
-
-    <!-- ===== Hero ===== -->
-    <section class="hero" id="home">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="hero-orb hero-orb--1"></div>
-        <div class="hero-orb hero-orb--2"></div>
-        <div class="hero-orb hero-orb--3"></div>
-        <div class="hero-grid"></div>
+        </nav>
       </div>
+    </header>
 
-      <div class="hero-content">
-        <p class="hero-eyebrow stagger">Hello, I'm</p>
-        <h1 class="hero-name stagger">Humberto Lopez</h1>
-        <p class="hero-role stagger">Full Stack Software Engineer</p>
-        <p class="hero-bio stagger">
-          12+ years of crafting high-quality software — from pixel-perfect UIs
-          to resilient back-end systems. I love turning ideas into products that
-          people actually enjoy using.
-        </p>
-        <div class="hero-actions stagger">
-          <a href="#projects" class="btn btn--primary">View My Work</a>
-          <a
-            href="https://github.com/HumbertoL"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn--outline"
-            ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
-          >
+    <main>
+      <!-- ===== Hero ===== -->
+      <section class="hero" id="home">
+        <div class="container">
+          <p class="hero-eyebrow">Principal Engineer</p>
+          <h1 class="hero-name">Humberto Lopez</h1>
+          <p class="hero-bio">
+            12+ years of crafting high-quality software — from pixel-perfect
+            UIs to resilient back-end systems. I love turning ideas into
+            products that people actually enjoy using.
+          </p>
+          <ul class="hero-links">
+            <li>
+              <a
+                href="https://github.com/HumbertoL"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub<span aria-hidden="true">&nbsp;&#8599;</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/humbertoalopez/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn<span aria-hidden="true">&nbsp;&#8599;</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://steamcommunity.com/id/HumbertoL/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Steam<span aria-hidden="true">&nbsp;&#8599;</span></a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="hero-social stagger">
+      </section>
+
+      <!-- ===== About ===== -->
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">01</div>
+          <h2 class="section-heading" id="about-heading" data-reveal>
+            About
+          </h2>
+
+          <div class="about-grid" data-reveal>
+            <div class="about-text">
+              <p>
+                I'm a full-stack software engineer with over 12 years of
+                professional experience building everything from interactive
+                web apps to hardware-driven IoT projects. I'm equally
+                comfortable diving into a React component tree, designing a
+                REST API, or soldering an Arduino circuit.
+              </p>
+              <p>
+                When I'm not shipping code, you'll find me crafting in my
+                workshop, tinkering with Linux, or gaming.
+              </p>
+            </div>
+            <div class="skills">
+              <h3 class="skills-heading">Technologies</h3>
+              <ul class="skill-list">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>HTML &amp; CSS</li>
+                <li>REST APIs</li>
+                <li>Arduino / C++</li>
+                <li>Linux</li>
+                <li>Git</li>
+                <li>IoT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Projects ===== -->
+      <section
+        class="section"
+        id="projects"
+        aria-labelledby="featured-projects"
+      >
+        <div class="container">
+          <div class="section-label" aria-hidden="true">02</div>
+          <h2 class="section-heading" id="featured-projects" data-reveal>
+            Selected Projects
+          </h2>
+
+          <div class="project-grid">
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img
+                  src="assets/boopsnoot.gif"
+                  alt="Boop Snoot pet photo generator preview"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Boop Snoot</h3>
+                <p class="project-tech">React &middot; Firebase</p>
+                <p class="project-desc">
+                  A delightful app that places a "snoot" on any part of the
+                  page that you "boop".
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://boop-snoot.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Launch app<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                  <a
+                    href="https://github.com/HumbertoL/boop-snoot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media project-media--video">
+                <iframe
+                  src="https://www.youtube.com/embed/xJZB41Rl86o"
+                  title="brew-em-all demo"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Coffee Pot Freshness Sensor</h3>
+                <p class="project-tech">Arduino &middot; C++ &middot; IoT</p>
+                <p class="project-desc">
+                  Arduino gadget that tracks coffee freshness and updates an
+                  LCD.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://www.youtube.com/watch?v=xJZB41Rl86o"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Watch demo<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                  <a
+                    href="https://github.com/HumbertoL/CoffeePotSensor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img
+                  src="assets/prs.png"
+                  alt="Merged PRs on open source projects preview"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Open Source Contributions</h3>
+                <p class="project-tech">
+                  React &middot; Material-UI &middot; Expo
+                </p>
+                <p class="project-desc">
+                  Contributed to React JS, Material-UI, Expo, MDN Web Docs, and
+                  more.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/pulls?q=is%3Apr+author%3AHumbertoL+user%3Amui+user%3Amdn+user%3Aarkypita+user%3Areactjs+user%3Aexpo+user%3Aprusa3d+sort%3Acreated-desc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >View PRs<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img
+                  src="https://user-images.githubusercontent.com/8048702/188496431-c3b7a76b-693d-4b8e-82f1-f239187953fb.gif"
+                  alt="NeoPixel ring clock animation demo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Arduino Animated Ring Clock</h3>
+                <p class="project-tech">
+                  Arduino &middot; NeoPixel &middot; C++
+                </p>
+                <p class="project-desc">
+                  Turns a NeoPixel ring into a clock with playful animations
+                  driven by an Arduino.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://www.tinkercad.com/things/a9E6ygQavKf-frantic-hillar-jaiks/editel?sharecode=qLQe7QWWapr5ZbWMG3YvCU3VH7WgVoDU2_r5Z7OdeAg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Tinkercad<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                  <a
+                    href="https://github.com/HumbertoL/arduino-animated-ring-clock"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media project-media--coolled" aria-hidden="true">
+                <span class="media-note">LED layout preview</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">CoolLED Editor</h3>
+                <p class="project-tech">
+                  React &middot; Reverse Engineering
+                </p>
+                <p class="project-desc">
+                  Editor for 16x96 LED panel animations using a
+                  reverse-engineered vendor format.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://coolled-editor.web.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Try it live<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                  <a
+                    href="https://github.com/HumbertoL/coolled-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media project-media--video">
+                <iframe
+                  src="https://www.youtube.com/embed/zzCy-9AG1cU"
+                  title="Smart Dog Treat Dispenser demo"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Smart Dog Treat Dispenser</h3>
+                <p class="project-tech">
+                  Arduino &middot; Blynk &middot; IoT
+                </p>
+                <p class="project-desc">
+                  Internet-controlled treat dispenser built with Blynk so you
+                  can reward pups from your phone.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://www.youtube.com/watch?v=zzCy-9AG1cU"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Watch demo<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                  <a
+                    href="https://github.com/HumbertoL/treat.dispenser"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img
+                  src="https://user-images.githubusercontent.com/8048702/190041020-3f523a0b-dd62-477c-895a-ea116d76ab17.png"
+                  alt="Wiring diagram for IR to Keyboard Bridge"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">IR to Keyboard Bridge</h3>
+                <p class="project-tech">
+                  Arduino &middot; C++ &middot; USB HID
+                </p>
+                <p class="project-desc">
+                  Convert IR remote signals into keyboard events with a Pro
+                  Micro or Leonardo so TV remotes can control USB devices.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/HumbertoL/IR-To-Keyboard-Bridge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Source<span aria-hidden="true">&nbsp;&#8599;</span></a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Designed &amp; built by Humberto Lopez</p>
+        <div class="footer-links">
           <a
             href="https://www.linkedin.com/in/humbertoalopez/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn profile"
-            ><i class="fab fa-linkedin" aria-hidden="true"></i
-          ></a>
+            >LinkedIn</a
+          >
           <a
             href="https://github.com/HumbertoL"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub profile"
-            ><i class="fab fa-github" aria-hidden="true"></i
-          ></a>
+            >GitHub</a
+          >
           <a
             href="https://steamcommunity.com/id/HumbertoL/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Steam profile"
-            ><i class="fab fa-steam" aria-hidden="true"></i
-          ></a>
+            >Steam</a
+          >
         </div>
-      </div>
-
-      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
-        <i class="fas fa-chevron-down" aria-hidden="true"></i>
-      </a>
-    </section>
-
-    <!-- ===== About ===== -->
-    <section class="about" id="about" aria-labelledby="about-heading">
-      <div class="section-container">
-        <h2 class="section-heading" id="about-heading" data-reveal>About Me</h2>
-
-        <div class="about-grid" data-reveal>
-          <div class="about-text">
-            <p>
-              I'm a full-stack software engineer with over 12 years of
-              professional experience building everything from interactive web
-              apps to hardware-driven IoT projects. I'm equally comfortable
-              diving into a React component tree, designing a REST API, or
-              soldering an Arduino circuit.
-            </p>
-            <p>
-              When I'm not shipping code, you'll find me crafting in my
-              workshop, tinkering with Linux, or gaming.
-            </p>
-          </div>
-          <div class="skills">
-            <h3 class="skills-heading">Technologies I work with</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">HTML &amp; CSS</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">Arduino / C++</span>
-              <span class="skill-tag">Linux</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">IoT</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Projects ===== -->
-    <section class="projects" id="projects" aria-labelledby="featured-projects">
-      <div class="section-container">
-        <h2 class="section-heading" id="featured-projects" data-reveal>
-          Featured Projects
-        </h2>
-        <div class="project-grid">
-          <article class="project-card" data-reveal>
-            <div class="project-media">
-              <img
-                src="assets/boopsnoot.gif"
-                alt="Boop Snoot pet photo generator preview"
-              />
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Boop Snoot</h3>
-              <div class="project-tech">
-                <span>React</span>
-                <span>Firebase</span>
-              </div>
-              <p>
-                A delightful app that places a "snoot" on any part of the page
-                that you "boop".
-              </p>
-              <div class="project-links">
-                <a
-                  class="project-link"
-                  href="https://boop-snoot.web.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-paw" aria-hidden="true"></i>
-                  <span>Launch Boop Snoot</span></a
-                >
-                <a
-                  class="project-link"
-                  href="https://github.com/HumbertoL/boop-snoot"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github" aria-hidden="true"></i>
-                  <span>Source on GitHub</span></a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-media project-media--video">
-              <iframe
-                src="https://www.youtube.com/embed/xJZB41Rl86o"
-                title="brew-em-all demo"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Coffee Pot Freshness Sensor</h3>
-              <div class="project-tech">
-                <span>Arduino</span>
-                <span>C++</span>
-                <span>IoT</span>
-              </div>
-              <p>
-                Arduino gadget that tracks coffee freshness and updates an LCD.
-              </p>
-              <div class="project-links">
-                <a
-                  class="project-link"
-                  href="https://www.youtube.com/watch?v=xJZB41Rl86o"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span>Watch on YouTube</span></a
-                >
-                <a
-                  class="project-link"
-                  href="https://github.com/HumbertoL/CoffeePotSensor"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github" aria-hidden="true"></i>
-                  <span>Source on GitHub</span></a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-media">
-              <img
-                src="assets/prs.png"
-                alt="Merged PRs on open source projects preview"
-              />
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Open Source Contributions</h3>
-              <div class="project-tech">
-                <span>React</span>
-                <span>Material-UI</span>
-                <span>Expo</span>
-              </div>
-              <p>
-                Contributed to React JS, Material-UI, Expo, MDN Web Docs, and
-                more.
-              </p>
-              <div class="project-links">
-                <a
-                  class="project-link"
-                  href="https://github.com/pulls?q=is%3Apr+author%3AHumbertoL+user%3Amui+user%3Amdn+user%3Aarkypita+user%3Areactjs+user%3Aexpo+user%3Aprusa3d+sort%3Acreated-desc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github" aria-hidden="true"></i>
-                  <span>View on GitHub</span></a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-media">
-              <img
-                src="https://user-images.githubusercontent.com/8048702/188496431-c3b7a76b-693d-4b8e-82f1-f239187953fb.gif"
-                alt="NeoPixel ring clock animation demo"
-              />
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Arduino Animated Ring Clock</h3>
-              <div class="project-tech">
-                <span>Arduino</span>
-                <span>NeoPixel</span>
-                <span>C++</span>
-              </div>
-              <p>
-                Turns a NeoPixel ring into a clock with playful animations
-                driven by an Arduino.
-              </p>
-              <div class="project-links">
-                <a
-                  class="project-link"
-                  href="https://www.tinkercad.com/things/a9E6ygQavKf-frantic-hillar-jaiks/editel?sharecode=qLQe7QWWapr5ZbWMG3YvCU3VH7WgVoDU2_r5Z7OdeAg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-cube" aria-hidden="true"></i>
-                  <span>Preview in Tinkercad</span></a
-                >
-                <a
-                  class="project-link"
-                  href="https://github.com/HumbertoL/arduino-animated-ring-clock"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github" aria-hidden="true"></i>
-                  <span>Source on GitHub</span></a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-media project-media--coolled">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIABAP8AAP///yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                alt="Placeholder LED animation for CoolLED"
-              />
-              <span class="media-note">LED layout preview</span>
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">CoolLED Editor</h3>
-              <div class="project-tech">
-                <span>React</span>
-                <span>Reverse Engineering</span>
-              </div>
-              <p>
-                Editor for 16x96 LED panel animations using a reverse-engineered
-                vendor format.
-              </p>
-              <div class="project-links">
-                <a
-                  class="project-link"
-                  href="https://coolled-editor.web.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fas fa-rocket" aria-hidden="true"></i>
-                  <span>Try it live</span></a
-                >
-                <a
-                  class="project-link"
-                  href="https://github.com/HumbertoL/coolled-editor"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github" aria-hidden="true"></i>
-                  <span>Source on GitHub</span></a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-media project-media--video">
-              <iframe
-                src="https://www.youtube.com/embed/zzCy-9AG1cU"
-                title="Smart Dog Treat Dispenser demo"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Smart Dog Treat Dispenser</h3>
-              <div class="project-tech">
-                <span>Arduino</span>
-                <span>Blynk</span>
-                <span>IoT</span>
-              </div>
-              <p>
-                Internet-controlled treat dispenser built with Blynk so you can
-                reward pups from your phone.
-              </p>
-              <div class="project-links">
-                <a
-                  class="project-link"
-                  href="https://www.youtube.com/watch?v=zzCy-9AG1cU"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span>Watch on YouTube</span></a
-                >
-                <a
-                  class="project-link"
-                  href="https://github.com/HumbertoL/treat.dispenser"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github" aria-hidden="true"></i>
-                  <span>Source on GitHub</span></a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-media">
-              <img
-                src="https://user-images.githubusercontent.com/8048702/190041020-3f523a0b-dd62-477c-895a-ea116d76ab17.png"
-                alt="Wiring diagram for IR to Keyboard Bridge"
-              />
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">IR to Keyboard Bridge</h3>
-              <div class="project-tech">
-                <span>Arduino</span>
-                <span>C++</span>
-                <span>USB HID</span>
-              </div>
-              <p>
-                Convert IR remote signals into keyboard events with a Pro Micro
-                or Leonardo so TV remotes can control USB devices.
-              </p>
-              <div class="project-links">
-                <a
-                  class="project-link"
-                  href="https://github.com/HumbertoL/IR-To-Keyboard-Bridge"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fab fa-github" aria-hidden="true"></i>
-                  <span>Source on GitHub</span></a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Footer ===== -->
-    <footer class="footer">
-      <p>Designed &amp; built by <strong>Humberto Lopez</strong></p>
-      <div class="footer-links">
-        <a
-          href="https://www.linkedin.com/in/humbertoalopez/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          ><i class="fab fa-linkedin" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://github.com/HumbertoL"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-          ><i class="fab fa-github" aria-hidden="true"></i
-        ></a>
-        <a
-          href="https://steamcommunity.com/id/HumbertoL/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Steam"
-          ><i class="fab fa-steam" aria-hidden="true"></i
-        ></a>
       </div>
     </footer>
 
     <script>
-      // Scroll-reveal animation
+      // Subtle scroll-reveal
       var observer = new IntersectionObserver(
         function (entries) {
           entries.forEach(function (entry) {
@@ -458,29 +405,11 @@
             }
           });
         },
-        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' },
+        { threshold: 0.1, rootMargin: '0px 0px -30px 0px' },
       );
 
       document.querySelectorAll('[data-reveal]').forEach(function (el) {
         observer.observe(el);
-      });
-
-      // Mobile menu toggle
-      var toggle = document.querySelector('.nav-toggle');
-      var links = document.querySelector('.nav-links');
-      toggle.addEventListener('click', function () {
-        var open = links.classList.toggle('open');
-        toggle.classList.toggle('open', open);
-        toggle.setAttribute('aria-expanded', String(open));
-      });
-
-      // Close mobile menu when a nav link is clicked
-      links.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () {
-          links.classList.remove('open');
-          toggle.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-        });
       });
     </script>
   </body>
